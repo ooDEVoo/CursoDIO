@@ -4,7 +4,8 @@ public class Testes {
 
 	public static void main(String[] args) {
 		
-		System.out.println("terminalllll");
+		int[][] numeros = {{4, 9, 8, 5}, {3, 0, 1, 5}, {1, 2, 7, 4}};
+		System.out.print(numeros[2][2]);
 		
 		/*SmartTV Tv = new SmartTV();
 		
