@@ -1,28 +1,33 @@
 package EstruturaDeDados;
 
-public class No {
+public class No<T> {
 	
-	private String conteudo;
-	private No proximoNo;
+	// <T> : A classe passa a aceitar um dados de Tipo genérico
 	
-	public No(String conteudo) {
+	// private String conteudo;
+	
+	private T conteudo; // neste momento, passamos a ter a possibilidade
+						// de termos nós de qualquer tipo: int, String, float..
+	private No<T> proximoNo;  // <T> especifica que o Nó é do mesmo tipo do anterior
+	
+	public No(T conteudo) {
 		this.conteudo = conteudo;
 		this.proximoNo = null;
 	}
 
-	public String getConteudo() {
+	public T getConteudo() {
 		return conteudo;
 	}
 
-	public void setConteudo(String conteudo) {
+	public void setConteudo(T conteudo) {
 		this.conteudo = conteudo;
 	}
 
-	public No getProximoNo() {
+	public No<T> getProximoNo() {
 		return proximoNo;
 	}
 
-	public void setProximoNo(No proximoNo) {
+	public void setProximoNo(No<T> proximoNo) {
 		this.proximoNo = proximoNo;
 	}
 

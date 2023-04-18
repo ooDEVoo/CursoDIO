@@ -4,18 +4,18 @@ public class MainNo {
 
 	public static void main(String[] args) {
 	
-		No no1 = new No("No 1");
-		No no2 = new No("No 2");
+		No<String> no1 = new No<>("No 1"); // <String> : denomina o tipo do nó
+		No<String> no2 = new No<>("No 2");
 		
 		// Encadeamento
 		
 		no1.setProximoNo(no2);
 		
-		No no3 = new No("No 3");
+		No<String> no3 = new No<String>("No 3");
 		
 		no2.setProximoNo(no3);
 		
-		No no4 = new No("No 4");
+		No<String> no4 = new No<>("No 4");
 		
 		no3.setProximoNo(no4);
 		
